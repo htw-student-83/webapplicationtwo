@@ -20,5 +20,7 @@ export default {
   justify-content: center;
   align-items: center;
   font-size: 65px;
+  border-radius: 5px;
+  border: 2px solid #85b983;
 }
 </style>

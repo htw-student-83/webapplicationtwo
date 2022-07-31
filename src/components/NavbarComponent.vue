@@ -51,7 +51,6 @@ export default {
   font-family: Arial,sans-serif;
 }
 
-
 .ButtonsComponents button{
   width: 110px;
   height: 50px;
@@ -63,7 +62,7 @@ export default {
   background-color: white;
 }
 
-.ButtonsComponents button:hover{
+button:hover{
   cursor: pointer;
 }
 
