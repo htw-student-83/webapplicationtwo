@@ -23,5 +23,7 @@ export default {
   font-size: 65px;
   border-radius: 5px;
   border: 2px solid aqua;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
 }
 </style>

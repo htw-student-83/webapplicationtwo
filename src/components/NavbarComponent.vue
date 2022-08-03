@@ -26,7 +26,7 @@ export default {
   display: flex;
   justify-content: space-between;
   padding: 10px;
-  border: 2px solid lightgreen;
+  border: 2px solid #6d9a6b;
   border-radius: 4px;
   margin-bottom: 2px;
 }
@@ -36,6 +36,8 @@ export default {
   margin-right: 10px;
   font-size: 15pt;
   padding-top: 20px;
+  font-weight: bold;
+  font-family: Arial,Arial, sans-serif;
 }
 
 .Logo{
@@ -60,6 +62,18 @@ export default {
   border-radius: 6px;
   border: 2px solid black;
   background-color: white;
+}
+
+.ComponenteA:hover{
+  background-color: lightskyblue;
+}
+
+.ComponenteB:hover{
+  background-color: #c3eec2;
+}
+
+.ComponenteC:hover{
+  background-color: #eeec9f;
 }
 
 button:hover{
