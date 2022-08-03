@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="containerC">
     <p>Component C</p>
   </div>
 </template>
@@ -13,7 +13,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.container{
+.containerC{
   height: 100vh;
   width: 100%;
   background-color: #eeec9f;

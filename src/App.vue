@@ -1,31 +1,31 @@
 <template>
   <NavbarComponent/>
-  <ComponentOne/>
-  <ComponentTwo/>
-  <ComponentThree/>
+  <router-view/>
 </template>
 
-<script>
-import ComponentOne from './components/ComponentOne.vue'
-import ComponentTwo from './components/ComponentTwo.vue'
-import ComponentThree from './components/ComponentThree.vue'
-import NavbarComponent from './components/NavbarComponent.vue'
+<style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+nav {
+  padding: 30px;
+}
+
+nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+nav a.router-link-exact-active {
+  color: #42b983;
+}
+</style>
+<script>
+import NavbarComponent from "@/components/NavbarComponent";
 export default {
-  name: 'App',
-  components: {
-    ComponentOne,
-    ComponentTwo,
-    ComponentThree,
-    NavbarComponent
-  }
+  components: {NavbarComponent}
 }
 </script>
-
-<style>
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-</style>

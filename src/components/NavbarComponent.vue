@@ -5,9 +5,9 @@
     </div>
     <div class="counter">Counter: 0</div>
     <div class="ButtonsComponents">
-      <button class="ComponenteA">Componente A</button>
-      <button class="ComponenteB">Componente B</button>
-      <button class="ComponenteC">Componente C</button>
+      <button class="ComponenteA"><router-link to="/containerA">Componente A</router-link></button>
+      <button class="ComponenteB"><router-link to="/containerB">Componente B</router-link></button>
+      <button class="ComponenteC"><router-link to="/containerC">Componente C</router-link></button>
     </div>
   </div>
 </template>
@@ -44,17 +44,24 @@ export default {
   width: 100px;
   height: 50px;
   margin-left: 2px;
+  margin-top: 2px;
   background-color: blue;
-  font-size: 20pt;
-  color: white;
-  text-align: center;
-  padding-top: 7px;
   border-radius: 6px;
+  text-align: center;
   font-family: Arial,sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  padding-top: 10px;
+}
+
+
+.ButtonsComponents{
+  margin-top: 2px;
 }
 
 .ButtonsComponents button{
-  width: 110px;
+  width: 112px;
   height: 50px;
   margin-left: 5px;
   font-size: 11pt;
