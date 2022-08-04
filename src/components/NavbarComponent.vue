@@ -4,12 +4,13 @@
       <img src="#" alt="Logo">
     </div>
     <div class="counter">
-      Counter: 0
+      Counter: {{count}}<br>
+      {{warning()}}
     </div>
     <div class="ButtonsComponents">
-      <div class="ComponenteA"><router-link to="/containerA">Componente A</router-link></div>
-      <div class="ComponenteB"><router-link to="/containerB">Componente B</router-link></div>
-      <div class="ComponenteC"><router-link to="/containerC">Componente C</router-link></div>
+      <div class="ComponenteA" @click="increment()"><router-link to="/containerA">Componente A</router-link></div>
+      <div class="ComponenteB" @click="increment()"><router-link to="/containerB">Componente B</router-link></div>
+      <div class="ComponenteC" @click="increment()"><router-link to="/containerC">Componente C</router-link></div>
     </div>
   </div>
 </template>
@@ -17,7 +18,23 @@
 <script>
 export default {
   name: 'NavbarComponent',
-
+  data(){
+    return {
+      count: 0,
+    }
+  },
+  methods:{
+    increment(){
+      return this.count++;
+    },
+    warning(){
+      if(this.count===3){
+        return "Alle Comps angeklickt."
+      } else if(this.count===4){
+        this.count = 1;
+      }
+    }
+  }
 }
 </script>
 
@@ -37,7 +54,7 @@ export default {
   margin-left: 10px;
   margin-right: 10px;
   font-size: 13pt;
-  padding-top: 20px;
+  padding-top: 7px;
   font-weight: bold;
   font-family: Arial,Arial, sans-serif;
 }
@@ -83,7 +100,6 @@ export default {
 }
 
 .ComponenteB{
-
   width: 120px;
   height: 50px;
   margin-left: 5px;
@@ -109,7 +125,6 @@ export default {
 }
 
 .ComponenteC{
-
   width: 120px;
   height: 50px;
   margin-left: 5px;
@@ -139,6 +154,4 @@ export default {
 button:hover{
   cursor: pointer;
 }
-
-
 </style>

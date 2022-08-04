@@ -28,10 +28,6 @@ export default {
   components: {
     NavbarComponent
   },
-  methods:{
-    increment(){
-      this.count++;
-    }
-  }
+
 }
 </script>
