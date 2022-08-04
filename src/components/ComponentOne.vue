@@ -7,6 +7,11 @@
 <script>
 export default {
   name: 'ComponentOne',
+  data(){
+    return{
+      count: 1,
+    }
+  },
 
 }
 </script>

@@ -3,11 +3,13 @@
     <div class="Logo">
       <img src="#" alt="Logo">
     </div>
-    <div class="counter">Counter: 0</div>
+    <div class="counter">
+      Counter: 0
+    </div>
     <div class="ButtonsComponents">
-      <button class="ComponenteA"><router-link to="/containerA">Componente A</router-link></button>
-      <button class="ComponenteB"><router-link to="/containerB">Componente B</router-link></button>
-      <button class="ComponenteC"><router-link to="/containerC">Componente C</router-link></button>
+      <div class="ComponenteA"><router-link to="/containerA">Componente A</router-link></div>
+      <div class="ComponenteB"><router-link to="/containerB">Componente B</router-link></div>
+      <div class="ComponenteC"><router-link to="/containerC">Componente C</router-link></div>
     </div>
   </div>
 </template>
@@ -34,7 +36,7 @@ export default {
 .counter{
   margin-left: 10px;
   margin-right: 10px;
-  font-size: 15pt;
+  font-size: 13pt;
   padding-top: 20px;
   font-weight: bold;
   font-family: Arial,Arial, sans-serif;
@@ -57,15 +59,66 @@ export default {
 
 
 .ButtonsComponents{
+  display: flex;
   margin-top: 2px;
+  margin-right: 10px;
 }
 
-.ButtonsComponents button{
-  width: 112px;
+.ComponenteA{
+  width: 120px;
   height: 50px;
   margin-left: 5px;
-  font-size: 11pt;
-  font-family: Arial,sans-serif;
+  padding-top: 14px;
+  font-size: 14px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  border-radius: 6px;
+  border: 2px solid black;
+  background-color: white;
+}
+
+.ComponenteA a{
+  color: black;
+  text-decoration: none;
+}
+
+.ComponenteB{
+
+  width: 120px;
+  height: 50px;
+  margin-left: 5px;
+  padding-top: 14px;
+  font-size: 14px;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  border-radius: 6px;
+  border: 2px solid black;
+  background-color: white;
+}
+
+.ComponenteB a{
+  color: black;
+  text-decoration: none;
+}
+
+.ComponenteC a{
+  color: black;
+  text-decoration: none;
+}
+
+.ComponenteC{
+
+  width: 120px;
+  height: 50px;
+  margin-left: 5px;
+  padding-top: 14px;
+  font-size: 14px;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
   border-radius: 6px;
   border: 2px solid black;
   background-color: white;
@@ -86,5 +139,6 @@ export default {
 button:hover{
   cursor: pointer;
 }
+
 
 </style>

@@ -19,13 +19,19 @@ nav a {
   color: #2c3e50;
 }
 
-nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
+
 <script>
+
 import NavbarComponent from "@/components/NavbarComponent";
 export default {
-  components: {NavbarComponent}
+  components: {
+    NavbarComponent
+  },
+  methods:{
+    increment(){
+      this.count++;
+    }
+  }
 }
 </script>
