@@ -4,8 +4,7 @@
       <img src="#" alt="Logo">
     </div>
     <div class="counter">
-      Counter: {{count}}<br>
-      {{warning()}}
+      Counter: {{count}}
     </div>
     <div class="ButtonsComponents">
       <div class="ComponenteA" @click="increment()"><router-link to="/containerA">Componente A</router-link></div>
@@ -25,11 +24,15 @@ export default {
   },
   methods:{
     increment(){
-      return this.count++;
+      if(this.count===3){
+          this.count = 1;
+      }else{
+        return this.count++;
+      }
     },
     warning(){
       if(this.count===3){
-        return "Alle Comps angeklickt."
+        return "All comps clicked."
       } else if(this.count===4){
         this.count = 1;
       }
